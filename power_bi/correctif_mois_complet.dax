@@ -1,0 +1,51 @@
+// ================================================================
+//  Correctif « mois complet » — à coller dans la vue requête DAX
+//  de SM_Boreal, Run, puis « Update model with changes ».
+//  Les mesures existantes sont REMPLACÉES (même nom, nouvelle formule).
+//  Règle : on ne présente que les mois terminés à la date de référence.
+//  L'objectif reste affiché pour tous les mois (c'est un plan).
+// ================================================================
+DEFINE
+    // ---------- Divisions : montants des mois complets seulement
+    MEASURE division_mensuel[Revenus division] =
+        CALCULATE ( SUM ( division_mensuel[revenus] ), division_mensuel[est_mois_complet] = TRUE () )
+    MEASURE division_mensuel[Coûts] =
+        CALCULATE ( SUM ( division_mensuel[couts] ), division_mensuel[est_mois_complet] = TRUE () )
+    MEASURE division_mensuel[Marge brute] =
+        CALCULATE ( SUM ( division_mensuel[marge_brute] ), division_mensuel[est_mois_complet] = TRUE () )
+    MEASURE division_mensuel[Revenus — même mois an passé] =
+        CALCULATE ( SUM ( division_mensuel[revenus_meme_mois_an_passe] ), division_mensuel[est_mois_complet] = TRUE () )
+    // l'atteinte compare au plan des MÊMES mois (sinon : 5 mois de revenus ÷ 12 mois d'objectif)
+    MEASURE division_mensuel[Atteinte objectif %] =
+        DIVIDE ( [Revenus division], CALCULATE ( [Objectif CA], division_mensuel[est_mois_complet] = TRUE () ) )
+    // cumuls d'exercice : valeur au dernier mois COMPLET (avant : dernier mois non futur = mois en cours)
+    MEASURE division_mensuel[Revenus cumul exercice] =
+        VAR _dernier = CALCULATE ( MAX ( division_mensuel[mois] ), division_mensuel[est_mois_complet] = TRUE () )
+        RETURN CALCULATE ( SUM ( division_mensuel[revenus_cumul_exercice] ), division_mensuel[mois] = _dernier )
+    MEASURE division_mensuel[Objectif cumul exercice] =
+        VAR _dernier = CALCULATE ( MAX ( division_mensuel[mois] ), division_mensuel[est_mois_complet] = TRUE () )
+        RETURN CALCULATE ( SUM ( division_mensuel[objectif_cumul_exercice] ), division_mensuel[mois] = _dernier )
+
+    // ---------- Entreprise : indicateurs pris au dernier mois COMPLET
+    MEASURE kpi_mensuel[Revenus 12 mois glissants] =
+        VAR _dernier = CALCULATE ( MAX ( kpi_mensuel[mois] ), kpi_mensuel[est_mois_complet] = TRUE () )
+        RETURN CALCULATE ( SUM ( kpi_mensuel[revenus_12_mois_glissants] ), kpi_mensuel[mois] = _dernier )
+    MEASURE kpi_mensuel[Carnet de commandes] =
+        VAR _dernier = CALCULATE ( MAX ( kpi_mensuel[mois] ), kpi_mensuel[est_mois_complet] = TRUE () )
+        RETURN CALCULATE ( SUM ( kpi_mensuel[carnet_commandes] ), kpi_mensuel[mois] = _dernier )
+    MEASURE kpi_mensuel[DSO (jours)] =
+        VAR _dernier = CALCULATE ( MAX ( kpi_mensuel[mois] ), kpi_mensuel[est_mois_complet] = TRUE () )
+        RETURN
+            DIVIDE (
+                CALCULATE ( SUM ( kpi_mensuel[comptes_recevables_fin_mois] ), kpi_mensuel[mois] = _dernier ),
+                CALCULATE ( SUM ( kpi_mensuel[facturation_ttc_3_mois] ), kpi_mensuel[mois] = _dernier )
+            ) * 91
+
+EVALUATE
+    SUMMARIZECOLUMNS (
+        dim_division[nom_division],
+        TREATAS ( { "EF 2026-2027" }, dim_date[exercice] ),
+        "Marge brute %", [Marge brute %],
+        "Atteinte objectif %", [Atteinte objectif %],
+        "Revenus cumul exercice", [Revenus cumul exercice]
+    )

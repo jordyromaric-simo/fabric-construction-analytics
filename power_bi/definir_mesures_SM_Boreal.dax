@@ -1,0 +1,97 @@
+// ================================================================
+//  À coller dans la VUE DE REQUÊTE DAX du modèle SM_Boreal, puis
+//  cliquer sur « Update model with changes » (ou les liens « Update
+//  model: Add new measure » au-dessus de DEFINE) pour enregistrer
+//  toutes les mesures dans le modèle en une fois.
+//  Chaque mesure est rangée dans la table gold qu'elle lit.
+// ================================================================
+DEFINE
+    MEASURE projet_synthese[Valeur révisée] = SUM ( projet_synthese[valeur_revisee] )
+    MEASURE projet_synthese[Coût à date] = SUM ( projet_synthese[cout_total] )
+    MEASURE projet_synthese[Coût projeté à la fin] = SUM ( projet_synthese[cout_projete_fin] )
+    MEASURE projet_synthese[Marge projetée] = SUM ( projet_synthese[marge_projetee] )
+    MEASURE projet_synthese[Marge projetée %] = DIVIDE ( [Marge projetée], [Valeur révisée] )
+    MEASURE projet_synthese[Marge prévue %] = DIVIDE ( SUM ( projet_synthese[marge_prevue] ), SUM ( projet_synthese[valeur_contrat] ) )
+    MEASURE projet_synthese[Érosion de marge (pts)] = [Marge projetée %] - [Marge prévue %]
+    MEASURE projet_synthese[Sur (+) / sous (-) facturation] = SUM ( projet_synthese[sur_sous_facturation] )
+    MEASURE projet_synthese[Retenues détenues par les clients] = SUM ( projet_synthese[retenues_detenues] )
+    MEASURE projet_synthese[Nb projets actifs] = CALCULATE ( COUNTROWS ( projet_synthese ), projet_synthese[statut] IN { "En cours", "Suspendu" } )
+    MEASURE projet_synthese[Nb projets en rouge] = CALCULATE ( COUNTROWS ( projet_synthese ), projet_synthese[sante] = "Rouge" )
+    MEASURE projet_synthese[Avancement (coût) %] = DIVIDE ( SUM ( projet_synthese[cout_total] ), SUM ( projet_synthese[budget_revise] ) )
+    MEASURE projet_mensuel[Coût du mois] = SUM ( projet_mensuel[cout_mois] )
+    MEASURE projet_mensuel[Coût cumulé] = 
+    VAR _dernier = MAX ( projet_mensuel[mois] )
+    RETURN CALCULATE ( SUM ( projet_mensuel[cout_cumul] ), projet_mensuel[mois] = _dernier )
+    MEASURE projet_mensuel[Facturé cumulé] = 
+    VAR _dernier = MAX ( projet_mensuel[mois] )
+    RETURN CALCULATE ( SUM ( projet_mensuel[facture_ht_cumul] ), projet_mensuel[mois] = _dernier )
+    MEASURE projet_mensuel[Budget révisé (référence)] = MAX ( projet_mensuel[budget_revise] )
+    MEASURE projet_code_cout[Budget révisé] = SUM ( projet_code_cout[budget_revise] )
+    MEASURE projet_code_cout[Coût réel] = SUM ( projet_code_cout[cout_reel] )
+    MEASURE projet_code_cout[Écart budget] = SUM ( projet_code_cout[ecart] )
+    MEASURE projet_code_cout[Budget consommé %] = DIVIDE ( [Coût réel], [Budget révisé] )
+    MEASURE division_mensuel[Revenus division] = SUM ( division_mensuel[revenus] )
+    MEASURE division_mensuel[Coûts] = SUM ( division_mensuel[couts] )
+    MEASURE division_mensuel[Marge brute] = SUM ( division_mensuel[marge_brute] )
+    MEASURE division_mensuel[Marge brute %] = DIVIDE ( [Marge brute], [Revenus division] )
+    MEASURE division_mensuel[Objectif CA] = SUM ( division_mensuel[objectif_ca] )
+    MEASURE division_mensuel[Atteinte objectif %] = DIVIDE ( [Revenus division], [Objectif CA] )
+    MEASURE division_mensuel[Objectif de marge %] = DIVIDE ( SUM ( division_mensuel[objectif_marge] ), [Objectif CA] )
+    MEASURE division_mensuel[Revenus — même mois an passé] = SUM ( division_mensuel[revenus_meme_mois_an_passe] )
+    MEASURE division_mensuel[Croissance vs an passé %] = DIVIDE ( [Revenus division] - [Revenus — même mois an passé], [Revenus — même mois an passé] )
+    MEASURE division_mensuel[Revenus cumul exercice] = 
+    VAR _dernier = CALCULATE ( MAX ( division_mensuel[mois] ), division_mensuel[est_mois_futur] = FALSE () )
+    RETURN CALCULATE ( SUM ( division_mensuel[revenus_cumul_exercice] ), division_mensuel[mois] = _dernier )
+    MEASURE division_mensuel[Objectif cumul exercice] = 
+    VAR _dernier = CALCULATE ( MAX ( division_mensuel[mois] ), division_mensuel[est_mois_futur] = FALSE () )
+    RETURN CALCULATE ( SUM ( division_mensuel[objectif_cumul_exercice] ), division_mensuel[mois] = _dernier )
+    MEASURE kpi_mensuel[Revenus 12 mois glissants] = 
+    VAR _dernier = MAX ( kpi_mensuel[mois] )
+    RETURN CALCULATE ( SUM ( kpi_mensuel[revenus_12_mois_glissants] ), kpi_mensuel[mois] = _dernier )
+    MEASURE kpi_mensuel[Carnet de commandes] = 
+    VAR _dernier = MAX ( kpi_mensuel[mois] )
+    RETURN CALCULATE ( SUM ( kpi_mensuel[carnet_commandes] ), kpi_mensuel[mois] = _dernier )
+    MEASURE kpi_mensuel[DSO (jours)] = 
+    VAR _dernier = MAX ( kpi_mensuel[mois] )
+    RETURN
+        DIVIDE (
+            CALCULATE ( SUM ( kpi_mensuel[comptes_recevables_fin_mois] ), kpi_mensuel[mois] = _dernier ),
+            CALCULATE ( SUM ( kpi_mensuel[facturation_ttc_3_mois] ), kpi_mensuel[mois] = _dernier )
+        ) * 91
+    MEASURE kpi_mensuel[Effectif moyen] = AVERAGE ( kpi_mensuel[effectif_actif] )
+    MEASURE kpi_mensuel[Heures supp. %] = DIVIDE ( SUM ( kpi_mensuel[heures_supp] ), SUM ( kpi_mensuel[heures_total] ) )
+    MEASURE main_oeuvre_hebdo[Heures] = SUM ( main_oeuvre_hebdo[heures_total] )
+    MEASURE main_oeuvre_hebdo[Heures supplémentaires] = SUM ( main_oeuvre_hebdo[heures_supp] )
+    MEASURE main_oeuvre_hebdo[% heures supp.] = DIVIDE ( [Heures supplémentaires], [Heures] )
+    MEASURE main_oeuvre_hebdo[Taux d'imputation %] = DIVIDE ( SUM ( main_oeuvre_hebdo[heures_imputables] ), [Heures] )
+    MEASURE main_oeuvre_hebdo[Coût main-d'œuvre] = SUM ( main_oeuvre_hebdo[cout_main_oeuvre] )
+    MEASURE main_oeuvre_hebdo[Coût horaire chargé moyen] = DIVIDE ( [Coût main-d'œuvre], [Heures] )
+    MEASURE employe_mensuel[Taux d'utilisation employé %] = DIVIDE ( SUM ( employe_mensuel[heures_imputables] ), SUM ( employe_mensuel[heures_total] ) )
+    MEASURE comptes_recevables[Comptes recevables] = SUM ( comptes_recevables[solde] )
+    MEASURE comptes_recevables[Recevables en retard] = CALCULATE ( [Comptes recevables], comptes_recevables[jours_retard] > 0 )
+    MEASURE comptes_recevables[Recevables > 90 jours] = CALCULATE ( [Comptes recevables], comptes_recevables[tranche_ordre] = 5 )
+    MEASURE comptes_recevables[% recevables en retard] = DIVIDE ( [Recevables en retard], [Comptes recevables] )
+    MEASURE comptes_payables[Comptes payables] = SUM ( comptes_payables[montant_ttc] )
+    MEASURE comptes_payables[Payables en retard] = CALCULATE ( [Comptes payables], comptes_payables[jours_retard] > 0 )
+    MEASURE fournisseur_annuel[Achats] = SUM ( fournisseur_annuel[montant_ht] )
+    MEASURE fournisseur_annuel[Nb fournisseurs classe A] = CALCULATE ( DISTINCTCOUNT ( fournisseur_annuel[fournisseur_maitre_id] ), fournisseur_annuel[classe_abc] = "A" )
+    MEASURE equipement_mensuel[Taux d'utilisation équipement %] = DIVIDE ( SUM ( equipement_mensuel[heures] ), SUM ( equipement_mensuel[heures_disponibles] ) )
+    MEASURE equipement_mensuel[Revenu interne équipement] = SUM ( equipement_mensuel[revenu_interne] )
+    MEASURE client_synthese[Délai moyen de paiement (jours)] = DIVIDE ( SUM ( client_synthese[jours_paiement_ponderes] ), SUM ( client_synthese[montant_paye] ) )
+    MEASURE client_synthese[Marge réalisée clients %] = 
+    DIVIDE (
+        SUM ( client_synthese[valeur_projets_termines] ) - SUM ( client_synthese[cout_projets_termines] ),
+        SUM ( client_synthese[valeur_projets_termines] )
+    )
+    MEASURE client_synthese[Revenus 12 derniers mois (clients)] = SUM ( client_synthese[revenus_12_mois] )
+    MEASURE projet_synthese[Nb projets à valider] = CALCULATE ( COUNTROWS ( projet_synthese ), projet_synthese[prevision_a_valider] = TRUE () )
+
+EVALUATE
+    ROW (
+        "Valeur révisée", [Valeur révisée],
+        "Marge projetée %", [Marge projetée %],
+        "Revenus 12 mois glissants", [Revenus 12 mois glissants],
+        "Carnet de commandes", [Carnet de commandes],
+        "Comptes recevables", [Comptes recevables],
+        "Nb projets en rouge", [Nb projets en rouge]
+    )

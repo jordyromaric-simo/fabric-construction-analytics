@@ -1,0 +1,18 @@
+# Données générées (≈130 Mo) : on les recrée avec generateur/gen.py
+source_sqlserver/donnees/
+*.csv
+!fichiers_externes/*.csv
+
+# Power BI : fichiers binaires et paramètres locaux
+*.pbix
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Système
+.DS_Store
+Thumbs.db

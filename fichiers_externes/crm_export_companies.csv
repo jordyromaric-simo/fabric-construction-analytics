@@ -1,0 +1,334 @@
+﻿Record ID,Company name,NEQ,Industry,Company owner,Lifecycle Stage,City,Satisfaction (1-10),Last Activity Date,Create Date
+5000000006,Municipalité de Saint-Léonard-d'Aston,8829731114,Government Administration,Aïcha Hernandez,Customer,Joliette,8,02/13/2026,01/28/2021
+5000000008,Fiducie immobilière Alliance,1196929902,Real Estate,Olivier Côté,Customer,Saint-Jean-sur-Richelieu,6,01/22/2026,05/28/2023
+5000000018,Fiducie immobilière Chabot,1163183881,Real Estate,Mohamed Martin,Customer,Drummondville,9,12/01/2025,08/22/2021
+5000000027,Ville De Thetford Mines,8877493072,Government Administration,Nathalie Ouellet,Customer,Thetford Mines,7,02/04/2026,04/17/2022
+5000000032,Groupe immobilier Appalaches,1153553413,Real Estate,Catherine Ménard,Customer,Repentigny,7,02/01/2026,10/28/2019
+5000000040,Quincaillerie Allard inc.,1151329842,Education,Amélie Audet,Lead,Drummondville,,06/02/2026,07/16/2025
+5000000047,Papiers Belvédère,,Manufacturing,Marie Simard,Customer,Laval,8,11/24/2025,06/24/2021
+5000000054,Propriétés Laflamme inc.,1183211005,Real Estate,Jean-Philippe Perron,Customer,Laval,7,05/11/2026,05/08/2021
+5000000060,Gestion Gagné inc.,1129459493,Real Estate,Maxime Rioux,Customer,Lévis,9,09/08/2026,08/25/2019
+5000000069,Municipalité de Lac-Beauport,8881762843,Government Administration,Nathalie Ouellet,Customer,Granby,8,02/14/2026,05/17/2021
+5000000072,Centre de services scolaire de la Riveraine,8865996761,Education,William Pouliot,Customer,Bécancour,6,07/29/2026,11/13/2021
+5000000078,Office municipal d'habitation de Trois-Rivières,8888744284,Government Administration,Mohamed Martin,Customer,Trois-Rivières,9,04/12/2026,10/15/2020
+5000000086,Ville de Granby,8813646662,Government Administration,Josée Chen,Customer,Granby,4,10/04/2026,04/10/2019
+5000000097,Composantes Pinacle inc.,1143074766,Manufacturing,Maxime Doyon,Customer,Victoriaville,6,04/13/2026,10/14/2019
+5000000104,Centre de services scolaire des Sommets,8826891646,Education,Karine Leblanc,Customer,Drummondville,7,08/20/2026,10/02/2022
+5000000110,Transport Belvédère,3374565947,Manufacturing,Mathieu Morin,Customer,Trois-Rivières,7,06/11/2026,09/14/2019
+5000000116,Quincaillerie Lemieux inc.,3367392389,Retail,Diego Lamontagne,Customer,Québec,,11/29/2025,08/16/2019
+5000000125,Fiducie immobilière Perreault,3323705255,Real Estate,Mohamed Martin,Customer,Longueuil,8,12/06/2025,01/01/2019
+5000000128,Habitations Saint-Maurice,3383985096,Real Estate,Karine Audet,Customer,Saint-Jean-sur-Richelieu,10,10/17/2025,01/17/2019
+5000000138,Centre de services scolaire des Bois-Francs,8830786036,Education,Josée Chen,Customer,Saint-Hyacinthe,,05/15/2026,08/19/2021
+5000000140,Alimentation Beauchemin inc.,1111405717,Education,Valérie Boudreau,Opportunity,Terrebonne,,08/22/2026,08/02/2025
+5000000148,Immeubles Dumont,1155884994,Real Estate,Mathieu Morin,Customer,Longueuil,7,06/24/2026,08/19/2022
+5000000160,Municipalité de Chambly,8884404598,Government Administration,Amélie Audet,Customer,Longueuil,4,11/10/2025,08/13/2024
+5000000166,Centre de services scolaire de Saint-Hyacinthe,8894752025,Education,Nathalie Ouellet,Customer,Drummondville,9,11/01/2025,05/23/2020
+5000000172,Métallurgie Concept inc.,,Real Estate,Marc-André Vachon,Opportunity,Saint-Jean-sur-Richelieu,,06/24/2026,03/23/2026
+5000000180,Ministère des Transports — Direction régionale Estrie,8839663860,Government Administration,Vanessa Boudreau,Customer,Sherbrooke,5,01/09/2026,09/07/2022
+5000000182,Investissements Lapointe inc.,1153019246,Real Estate,Marie-Ève Kouassi,Customer,Montréal,4,08/26/2026,10/12/2024
+5000000195,Pharmacie Valmont et associés,1124838961,Real Estate,Aïcha Hernandez,Opportunity,Magog,,08/23/2026,08/14/2025
+5000000197,Municipalité de Stoke,8841756264,Government Administration,Diego Lamontagne,Customer,Lévis,8,10/16/2026,03/03/2021
+5000000206,Hôtellerie Champlain inc.,1166001963,Retail,Olivier Côté,Opportunity,Québec,,09/12/2026,04/17/2026
+5000000213,Transport Larouche inc.,1172478940,Retail,Maxime Rioux,Opportunity,Saint-Jean-sur-Richelieu,,08/26/2026,04/12/2026
+5000000223,Groupe immobilier Valmont inc.,1180931837,Education,Marie-Ève Kouassi,Opportunity,Québec,,05/08/2026,06/28/2026
+5000000230,MUNICIPALITÉ DE FARNHAM,8866523546,Government Administration,Hugo Grenier,Customer,Victoriaville,,12/05/2024,09/06/2019
+5000000234,Transport Appalaches inc.,1183912304,Manufacturing,Diego Lamontagne,Customer,Laval,8,11/07/2025,09/02/2024
+5000000244,Laiterie Dupuis inc.,1164449446,Real Estate,Maxime Doyon,Lead,Québec,,09/28/2026,04/06/2025
+5000000251,Ville de Victoriaville,8894521310,Government Administration,Amélie Audet,Customer,Victoriaville,7,05/05/2026,03/05/2023
+5000000254,Propriétés Champlain,1153151955,Real Estate,Karine Lachance,Customer,Saint-Georges,7,05/25/2026,05/22/2020
+5000000262,Investissements Perreault inc.,3359191647,Real Estate,Marie Simard,Customer,Montréal,9,01/23/2026,10/11/2021
+5000000272,Habitations Ménard inc.,3357518263,Real Estate,Hugo Grenier,Customer,Laval,5,02/14/2026,03/25/2024
+5000000279,Immeubles Lemay,,Real Estate,Nathalie Ouellet,Customer,Terrebonne,4,05/27/2026,01/23/2022
+5000000281,Office municipal d'habitation de Saint-Georges,8819207109,Government Administration,Karine Leblanc,Customer,Saint-Georges,4,10/14/2026,03/02/2022
+5000000289,Marché Perron inc.,1130176738,Retail,Catherine Ménard,Customer,Québec,9,06/01/2026,09/10/2024
+5000000298,Fiducie immobilière Dubé,3344448328,Real Estate,Maxime Rioux,Customer,Saint-Jean-sur-Richelieu,7,06/27/2026,04/19/2022
+5000000302,Métallurgie Martin,1191538274,Manufacturing,Marie-Ève Kouassi,Customer,Saint-Jean-sur-Richelieu,8,09/20/2026,08/22/2021
+5000000310,Propriétés Poulin inc.,,Real Estate,Andréanne Nadeau,Opportunity,Shawinigan,,08/14/2026,01/19/2026
+5000000321,Automobiles Laurentide,3354137419,Retail,Hugo Turcotte,Customer,Sherbrooke,7,07/11/2026,02/23/2024
+5000000328,Municipalité de North-Hatley,8811362363,Government Administration,Aïcha Hernandez,Customer,Québec,4,07/06/2026,07/27/2021
+5000000331,Immeubles Caron ltée,1189556818,Education,William Pouliot,Opportunity,Shawinigan,,09/08/2026,10/14/2025
+5000000338,Centre de services scolaire des Navigateurs,8834159990,Education,Marie-Ève Kouassi,Customer,Victoriaville,8,09/09/2026,12/03/2023
+5000000349,Propriétés Tremblay inc.,1196363039,Real Estate,Aïcha Hernandez,Customer,Drummondville,,02/03/2026,04/27/2019
+5000000355,Ville de Trois-Rivières,8847732386,Government Administration,Karine Audet,Customer,Trois-Rivières,8,09/25/2025,03/08/2023
+5000000357,Immeubles Vallée,,Real Estate,Karine Lachance,Customer,Sherbrooke,9,08/31/2026,04/09/2023
+5000000365,Habitations Couture,1180066064,Real Estate,Mathieu Morin,Customer,Québec,,07/27/2026,02/27/2022
+5000000374,Gestion Paradis,,Real Estate,Jean Silva,Customer,Joliette,9,07/07/2026,05/13/2021
+5000000379,Municipalité De Notre-Dame-Du-Mont-Carmel,8898307407,Government Administration,Maxime Rioux,Customer,Lévis,9,10/08/2025,10/04/2024
+5000000387,Gestion Dubé inc.,3386701267,Real Estate,Maxime Doyon,Customer,Saint-Georges,4,10/19/2026,12/16/2022
+5000000397,Ministère des Transports — Direction régionale Montérégie,8896107094,Government Administration,Maxime Rioux,Customer,Saint-Jean-sur-Richelieu,7,12/24/2025,09/18/2022
+5000000400,Gestion Optimum,1141819248,Real Estate,Marie Simard,Customer,Terrebonne,8,08/04/2026,01/06/2019
+5000000412,Propriétés Bernier,1136743194,Real Estate,Aïcha Hernandez,Customer,Drummondville,5,03/10/2026,01/22/2019
+5000000418,Habitations Simard,3368471229,Real Estate,Hugo Turcotte,Customer,Montréal,8,08/14/2026,06/10/2021
+5000000426,Groupe immobilier Desjardins inc.,1170182535,Real Estate,Maxime Rioux,Customer,Québec,7,03/08/2026,04/26/2021
+5000000428,Municipalité de Sainte-Marie,8870481030,Government Administration,Diego Lamontagne,Customer,Québec,7,03/13/2026,12/08/2021
+5000000439,Papiers Champagne inc.,1182847678,Retail,Maxime Doyon,Opportunity,Joliette,,07/10/2026,07/02/2025
+5000000441,Centre de services scolaire de l'Énergie,8858585245,Education,Marie Simard,Customer,Sherbrooke,8,11/12/2025,12/02/2023
+5000000448,Investissements Boudreau-Fournier,1110386229,Real Estate,Diego Lamontagne,Customer,Laval,8,06/08/2026,04/16/2020
+5000000458,Gestion Cap inc.,3339644425,Real Estate,Jean-Philippe Perron,Customer,Sherbrooke,7,06/23/2026,02/20/2023
+5000000464,Métallurgie Rousseau inc.,1129521029,Real Estate,Olivier Côté,Opportunity,Lévis,,06/26/2026,07/12/2025
+5000000475,Ville de Montréal,8864749926,Government Administration,Andréanne Hébert,Customer,Montréal,8,09/22/2026,12/13/2024
+5000000477,Habitations Ouellet,3349225221,Real Estate,Hugo Turcotte,Customer,Montréal,9,04/29/2026,10/04/2024
+5000000489,Fiducie immobilière Concept,1147337655,Real Estate,Andréanne Hébert,Customer,Laval,9,01/14/2026,08/06/2019
+5000000491,Investissements Prestige inc.,1163668412,Retail,Jean Silva,Opportunity,Québec,,05/14/2026,09/19/2025
+5000000498,Société québécoise des infrastructures — Lanaudière,8817556438,Government Administration,William Pouliot,Customer,Terrebonne,,01/03/2026,01/21/2024
+5000000508,Société québécoise des infrastructures — Laval,8849574760,Government Administration,Karine Audet,Customer,Laval,7,09/17/2026,08/09/2020
+5000000511,Ville de Drummondville,8841560147,Government Administration,Valérie Boudreau,Customer,Drummondville,7,08/04/2026,05/07/2021
+5000000521,Immeubles Nadeau ltée,1163104898,Real Estate,Mathieu Morin,Customer,Magog,9,02/09/2026,02/01/2021
+5000000531,Papiers Synergie,1158874112,Manufacturing,Mathieu Morin,Customer,Trois-Rivières,6,04/22/2026,06/21/2022
+5000000536,Meubles Girard ltée,3365582704,Retail,Andréanne Nadeau,Customer,Québec,9,06/04/2026,03/09/2023
+5000000544,Fiducie Immobilière Belvédère,1110364188,Real Estate,Marie-Ève Kouassi,Customer,Québec,9,10/22/2025,07/07/2019
+5000000550,Usinage Paradis,1192874288,Manufacturing,Mathieu Morin,Customer,Québec,,02/23/2026,12/08/2020
+5000000555,Hôtellerie Synergie inc.,,Manufacturing,Andréanne Hébert,Lead,Québec,,09/11/2026,05/27/2025
+5000000565,Fiducie Immobilière Perron,1111757091,Real Estate,Andréanne Nadeau,Customer,Sherbrooke,8,03/07/2026,11/21/2022
+5000000567,Usinage Lemieux inc.,,Manufacturing,Hugo Grenier,Customer,Longueuil,10,10/11/2026,08/06/2019
+5000000580,CIUSSS — Montréal,8884109003,Hospital & Health Care,Hugo Turcotte,Customer,Montréal,4,11/01/2025,01/12/2024
+5000000585,Immeubles Moreau ltée,1115987092,Real Estate,Maxime Rioux,Customer,Sherbrooke,4,12/23/2025,11/18/2023
+5000000594,Municipalité de Rawdon,8829920396,Government Administration,Nathalie Ouellet,Customer,Shawinigan,9,12/30/2025,07/19/2023
+5000000599,Pharmacie Gosselin et associés,,Retail,Amélie Audet,Customer,Granby,9,02/13/2026,10/08/2023
+5000000606,Centre De Services Scolaire Des Premières-Seigneuries,8899266097,Education,Karine Audet,Customer,Terrebonne,5,07/03/2026,10/19/2024
+5000000615,Habitations Horizon inc.,,Real Estate,Valérie Boudreau,Customer,Montréal,9,05/31/2026,11/15/2020
+5000000616,Gestion Cloutier inc.,3314211577,Real Estate,William Pouliot,Customer,Granby,7,09/26/2026,03/24/2020
+5000000627,Composantes Champagne,1143055914,Manufacturing,Aïcha Hernandez,Customer,Lévis,7,03/25/2026,06/05/2019
+5000000635,Alimentation Appalaches inc.,1157802207,Retail,Josée Chen,Customer,Montréal,7,01/31/2026,11/08/2023
+5000000640,Ville de Sherbrooke,8844150431,Government Administration,Olivier Champagne,Customer,Sherbrooke,6,06/24/2026,11/24/2023
+5000000648,Marché Gagné inc.,1198602081,Retail,Diego Lamontagne,Customer,Québec,9,03/05/2026,04/28/2024
+5000000657,Municipalité de Marieville,8855140474,Government Administration,Hugo Turcotte,Customer,Saint-Georges,7,11/25/2025,04/26/2024
+5000000661,Composantes Cap,,Manufacturing,Marc-André Vachon,Customer,Montréal,8,04/28/2026,03/27/2019
+5000000667,Pharmacie Savard-Rioux et associés,,Real Estate,Maxime Rioux,Opportunity,Lévis,,10/02/2026,05/05/2025
+5000000676,Restaurants Boisvert,1172855420,Retail,Hugo Turcotte,Customer,Drummondville,9,08/03/2026,06/24/2024
+5000000685,Marché Bernier,1182661360,Retail,Marie-Ève Kouassi,Customer,Drummondville,7,09/08/2026,12/18/2023
+5000000687,Plastiques Audet ltée,1155663639,Manufacturing,Andréanne Nadeau,Customer,Granby,8,12/21/2025,06/22/2023
+5000000693,Papiers Saint-Maurice,1186925714,Manufacturing,Hugo Turcotte,Customer,Québec,,11/19/2025,12/23/2022
+5000000706,Immeubles Dufour-Marcoux ltée,,Manufacturing,Andréanne Hébert,Opportunity,Victoriaville,,05/06/2026,01/02/2025
+5000000709,Fiducie immobilière Labrecque,3353883973,Real Estate,Maxime Doyon,Customer,Granby,,06/02/2026,07/19/2021
+5000000717,Fiducie immobilière Montcalm,1137308283,Education,Amélie Audet,Opportunity,Saint-Hyacinthe,,05/24/2026,02/20/2025
+5000000723,Habitations Pinacle,1177576144,Real Estate,Marie-Ève Kouassi,Customer,Drummondville,4,09/29/2025,09/14/2023
+5000000734,Centre de services scolaire des Grandes-Seigneuries,8845120875,Education,Marc-André Vachon,Customer,Magog,7,04/14/2026,07/21/2023
+5000000737,Immeubles Leblanc-Larouche ltée,1124739477,Real Estate,Diego Lamontagne,Customer,Lévis,4,09/28/2026,10/01/2022
+5000000743,Restaurants Morin inc.,,Manufacturing,Andréanne Hébert,Opportunity,Longueuil,,10/18/2026,12/20/2025
+5000000750,Gestion Champlain inc.,1152120871,Real Estate,Marie Simard,Customer,Shawinigan,9,11/18/2025,11/05/2020
+5000000761,Municipalité de Sainte-Julienne,8813158763,Government Administration,Karine Audet,Customer,Victoriaville,10,01/27/2026,08/19/2019
+5000000766,Les Développements Desjardins inc.,1159766209,Real Estate,William Pouliot,Customer,Laval,,10/08/2026,08/13/2023
+5000000776,Les Développements Valmont inc.,1190049108,Education,Mohamed Martin,Lead,Drummondville,,09/25/2026,04/08/2025
+5000000782,Investissements Fournier,1121280352,Real Estate,Marc-André Vachon,Customer,Montréal,5,06/19/2026,01/22/2022
+5000000789,Groupe immobilier Charron,1182686648,Real Estate,Karine Leblanc,Customer,Laval,9,10/18/2026,04/20/2019
+5000000796,Automobiles Lavoie,1157326773,Retail,Diego Lamontagne,Customer,Magog,9,01/17/2026,07/03/2024
+5000000802,Les Développements Michaud,1196911525,Real Estate,Marc-André Vachon,Customer,Longueuil,9,03/12/2026,06/04/2023
+5000000808,Investissements Vallée inc.,3357973280,Real Estate,Luc Tremblay,Customer,Laval,7,09/17/2026,11/17/2022
+5000000817,Groupe immobilier Lefebvre-Boudreau inc.,,Manufacturing,Hugo Grenier,Lead,Trois-Rivières,,07/15/2026,01/12/2025
+5000000824,Aliments Caron inc.,1130564688,Education,Diego Lamontagne,Opportunity,Montréal,,08/04/2026,04/24/2025
+5000000828,Cégep De Repentigny,8866415035,Education,Valérie Boudreau,Customer,Repentigny,,09/19/2025,10/12/2020
+5000000839,Laiterie Avenir inc.,3380865045,Manufacturing,Maxime Doyon,Customer,Lévis,,01/20/2026,10/20/2020
+5000000845,Centre De La Petite Enfance Les Lucioles,1162738366,Education,Josée Chen,Customer,Victoriaville,8,04/03/2026,10/26/2021
+5000000848,Propriétés Boucher inc.,1113414297,Real Estate,Marie Simard,Customer,Terrebonne,,10/08/2025,01/14/2024
+5000000855,CIUSSS — Lanaudière,8880561921,Hospital & Health Care,Karine Leblanc,Customer,Terrebonne,8,12/14/2025,03/25/2019
+5000000864,FIDUCIE IMMOBILIÈRE APPALACHES,3391273442,Real Estate,Karine Leblanc,Customer,Terrebonne,,12/28/2025,09/17/2020
+5000000871,Cégep de Saint-Hyacinthe,,Education,Maxime Rioux,Customer,Saint-Hyacinthe,7,05/01/2026,07/08/2020
+5000000876,Pharmacie Audet et associés,,Education,Valérie Boudreau,Opportunity,Sherbrooke,,07/27/2026,09/20/2025
+5000000886,CIUSSS — Mauricie,8831020519,Hospital & Health Care,Josée Chen,Customer,Trois-Rivières,9,02/04/2026,02/11/2021
+5000000890,Quincaillerie Marcoux,,Retail,Vanessa Boudreau,Customer,Terrebonne,5,05/27/2026,08/24/2023
+5000000896,Municipalité de Saint-Célestin,8848877235,Government Administration,Jean-Philippe Perron,Customer,Trois-Rivières,9,10/02/2025,02/22/2021
+5000000903,Municipalité de Compton,8857384101,Government Administration,Luc Tremblay,Customer,Sherbrooke,9,09/16/2026,12/02/2020
+5000000916,Meubles St-Pierre,1190789299,Retail,Marie-Ève Kouassi,Customer,Lévis,9,04/05/2026,03/26/2019
+5000000923,Automobiles Fleuve inc.,1138870402,Retail,Josée Chen,Customer,Bécancour,7,09/10/2026,08/11/2019
+5000000925,Ciusss — Chaudière-Appalaches,8893655068,Hospital & Health Care,Jean-Philippe Perron,Customer,Lévis,8,09/20/2026,03/08/2020
+5000000934,Centre de la petite enfance Les Petits Bourgeons,1169116692,Education,Nathalie Ouellet,Customer,Trois-Rivières,10,10/20/2026,12/07/2022
+5000000943,Gestion Laurentide inc.,1155944287,Real Estate,Maxime Doyon,Customer,Laval,6,11/22/2025,12/12/2022
+5000000946,Restaurants Champlain,1125206236,Retail,Olivier Champagne,Customer,Magog,4,10/07/2025,08/23/2021
+5000000954,Fiducie immobilière Synergie,1154270132,Real Estate,Olivier Côté,Customer,Québec,9,02/02/2026,11/11/2022
+5000000965,Municipalité de Saint-Joseph-de-Beauce,8862196689,Government Administration,Catherine Ménard,Customer,Québec,7,09/18/2026,07/13/2023
+5000000970,Marché Lamontagne inc.,1129044450,Manufacturing,Karine Audet,Opportunity,Québec,,06/05/2026,06/10/2026
+5000000974,Municipalité de Lac-Etchemin,8825844306,Government Administration,Maxime Doyon,Customer,Shawinigan,8,09/03/2026,05/02/2024
+5000000985,Alimentation Leblanc,1130060329,Retail,Marie-Ève Kouassi,Customer,Sherbrooke,5,09/12/2026,09/04/2022
+5000000988,Municipalité de Stoneham,8814959012,Government Administration,Jean-Philippe Perron,Customer,Saint-Jean-sur-Richelieu,6,03/24/2026,03/05/2023
+5000000994,Composantes Lamontagne,1182535441,Manufacturing,Karine Lachance,Customer,Laval,9,08/03/2026,07/18/2020
+5000001003,Plastiques Lamontagne ltée,1152460966,Manufacturing,Vanessa Boudreau,Customer,Québec,9,08/11/2026,04/13/2022
+5000001014,Alimentation Thibault,3398697878,Retail,Mohamed Martin,Customer,Joliette,8,03/23/2026,08/28/2022
+5000001015,Fiducie immobilière Larouche,1141935537,Real Estate,Hugo Turcotte,Customer,Montréal,4,07/28/2026,08/05/2020
+5000001025,Usinage Dufour-Leclerc,3352668052,Manufacturing,Marc-André Vachon,Customer,Lévis,8,03/11/2026,05/07/2023
+5000001030,Investissements Lemieux-Beauchemin inc.,1194205708,Real Estate,Maxime Doyon,Opportunity,Québec,,08/26/2026,11/19/2025
+5000001037,Alimentation Valmont,1194740887,Retail,Karine Lachance,Customer,Montréal,7,04/20/2026,10/26/2023
+5000001047,Municipalité de Saint-Boniface,8874224891,Government Administration,Olivier Côté,Customer,Sherbrooke,8,10/20/2026,01/21/2019
+5000001052,Énergie Prestige,,Manufacturing,Marie-Ève Kouassi,Customer,Laval,4,11/01/2025,04/09/2021
+5000001061,Municipalité de Saint-Prosper,8838968413,Government Administration,Amélie Audet,Customer,Québec,10,10/09/2025,05/26/2021
+5000001070,Hôtellerie Montcalm,1167983787,Retail,Hugo Grenier,Customer,Sherbrooke,7,03/10/2026,09/21/2020
+5000001077,Groupe immobilier Rive-Sud inc.,1137544421,Real Estate,Andréanne Nadeau,Customer,Sherbrooke,8,04/15/2026,10/07/2019
+5000001084,Métallurgie Ménard-Bouchard inc.,1174414979,Education,Valérie Boudreau,Opportunity,Québec,,09/18/2026,01/13/2026
+5000001085,Groupe immobilier Bolduc inc.,1138933499,Real Estate,Valérie Boudreau,Customer,Trois-Rivières,5,07/31/2026,01/10/2023
+5000001095,Cégep de Laval,8812692985,Education,Andréanne Hébert,Customer,Laval,8,11/29/2025,11/09/2022
+5000001104,Pharmacie Perron-Fortin,1127243645,Retail,Karine Lachance,Customer,Repentigny,,04/18/2026,06/04/2023
+5000001109,Municipalité de Sainte-Monique,8869067621,Government Administration,Hugo Grenier,Customer,Québec,7,12/18/2025,11/19/2021
+5000001118,Municipalité de Saint-Étienne-des-Grès,8851982236,Government Administration,Mathieu Morin,Customer,Sherbrooke,8,07/31/2026,07/24/2021
+5000001123,Groupe immobilier Boisvert inc.,1177682654,Real Estate,Karine Audet,Customer,Magog,8,07/20/2026,08/11/2024
+5000001128,Laiterie Cloutier inc.,1156456794,Manufacturing,Hugo Grenier,Customer,Granby,6,09/18/2025,04/18/2019
+5000001136,Municipalité de Sutton,8832527019,Government Administration,Mohamed Martin,Customer,Drummondville,5,12/28/2025,12/18/2020
+5000001143,Marché Beaudoin,3313348345,Retail,Amélie Audet,Customer,Québec,7,10/15/2026,12/16/2024
+5000001148,Ville de Shawinigan,8835194364,Government Administration,Karine Lachance,Customer,Shawinigan,,09/25/2025,11/17/2023
+5000001157,PAPIERS MÉNARD INC.,1130909967,Manufacturing,William Pouliot,Customer,Joliette,,07/19/2024,06/03/2023
+5000001164,Ville de Lévis,,Government Administration,Vanessa Boudreau,Customer,Lévis,8,08/05/2026,02/27/2020
+5000001175,Transport Boisvert inc.,1120329906,Retail,Josée Chen,Opportunity,Sherbrooke,,07/13/2026,01/17/2026
+5000001176,Centre de services scolaire des Samares,8830298686,Education,Karine Lachance,Customer,Québec,9,01/09/2026,04/14/2024
+5000001188,Marché Bouchard,1139649977,Retail,Hugo Grenier,Customer,Québec,7,09/06/2026,08/07/2019
+5000001191,Aliments Lavoie inc.,1164826874,Retail,Mathieu Morin,Opportunity,Shawinigan,,10/09/2026,07/02/2025
+5000001198,Centre de services scolaire du Chemin-du-Roy,8869745875,Education,Vanessa Boudreau,Customer,Longueuil,6,03/29/2026,06/01/2019
+5000001205,Habitations Lefebvre inc.,,Education,Marc-André Vachon,Lead,Québec,,04/08/2026,06/11/2026
+5000001216,Plastiques Bérubé,3327192263,Manufacturing,Josée Chen,Customer,Laval,4,08/19/2026,11/15/2022
+5000001221,Municipalité de Mont-Saint-Hilaire,8875544694,Government Administration,Marie Simard,Customer,Montréal,10,10/19/2026,09/27/2023
+5000001231,Ville de Longueuil,8847587258,Government Administration,Karine Audet,Customer,Longueuil,7,03/27/2026,01/28/2024
+5000001237,Aliments Estrien,1124134383,Manufacturing,Maxime Rioux,Customer,Trois-Rivières,8,04/13/2026,06/15/2022
+5000001243,Laiterie Richard inc.,1117235080,Real Estate,Marie-Ève Kouassi,Opportunity,Laval,,10/15/2026,04/21/2026
+5000001247,Centre De La Petite Enfance Les Joyeux Lutins,1175979312,Education,Olivier Côté,Customer,Granby,4,10/10/2025,12/15/2021
+5000001253,Centre de services scolaire de la Capitale,8844984832,Education,Aïcha Hernandez,Customer,Granby,4,11/29/2025,06/02/2024
+5000001265,Quincaillerie Prestige,1156468987,Retail,Valérie Boudreau,Customer,Sherbrooke,9,10/06/2025,09/16/2022
+5000001273,Pharmacie Champagne et associés,,Manufacturing,Karine Lachance,Lead,Trois-Rivières,,08/23/2026,09/21/2025
+5000001277,Métallurgie Synergie inc.,1129348620,Real Estate,Luc Tremblay,Lead,Thetford Mines,,07/09/2026,07/27/2025
+5000001284,Centre de services scolaire des Découvreurs,8855434110,Education,Valérie Boudreau,Customer,Joliette,5,08/26/2026,07/09/2023
+5000001291,Office municipal d'habitation de Saint-Hyacinthe,8815839984,Government Administration,Nathalie Ouellet,Customer,Saint-Hyacinthe,5,01/10/2026,09/08/2024
+5000001296,Technologies Couture inc.,1124223388,Manufacturing,Hugo Grenier,Customer,Victoriaville,9,07/07/2026,11/21/2023
+5000001304,Aliments Dumont inc.,1175797048,Retail,Catherine Ménard,Lead,Shawinigan,,05/08/2026,10/15/2025
+5000001310,Pharmacie Dufour-Bernier et associés,,Manufacturing,Valérie Boudreau,Lead,Trois-Rivières,,10/08/2026,09/13/2025
+5000001322,Transport Bergeron inc.,1131924874,Retail,Sébastien Gingras,Opportunity,Québec,,07/01/2026,10/26/2025
+5000001328,Municipalité de Cowansville,8857587261,Government Administration,Josée Chen,Customer,Longueuil,7,09/28/2026,10/22/2019
+5000001330,Technologies Caron inc.,1143784268,Manufacturing,Andréanne Hébert,Customer,Québec,4,01/18/2026,03/18/2024
+5000001338,MUNICIPALITÉ DE MARIEVILLE,8855140474,Government Administration,Hugo Turcotte,Customer,Saint-Georges,,02/14/2025,04/26/2024
+5000001345,Municipalité De L'Assomption,8816360238,Government Administration,Diego Lamontagne,Customer,Drummondville,8,03/28/2026,07/05/2023
+5000001356,Quincaillerie Cyr-Champagne inc.,,Education,Josée Chen,Lead,Saint-Georges,,09/22/2026,04/04/2025
+5000001359,Papiers Ménard inc.,1130909967,Manufacturing,William Pouliot,Customer,Joliette,10,02/24/2026,06/03/2023
+5000001366,Fiducie immobilière Champagne,1115939933,Real Estate,Catherine Ménard,Customer,Terrebonne,5,11/17/2025,07/22/2022
+5000001377,Immeubles Champlain ltée,,Manufacturing,Karine Audet,Opportunity,Terrebonne,,06/29/2026,03/04/2026
+5000001385,Usinage Girard,3316280980,Manufacturing,Olivier Côté,Customer,Joliette,7,07/25/2026,10/19/2023
+5000001389,Groupe immobilier Laflamme inc.,1176334779,Real Estate,Catherine Ménard,Customer,Québec,4,12/18/2025,01/21/2024
+5000001397,Municipalité de Beauceville,,Government Administration,Jean-Philippe Perron,Customer,Longueuil,5,08/09/2026,10/10/2021
+5000001404,Centre de services scolaire Marie-Victorin,8829514936,Education,Andréanne Hébert,Customer,Terrebonne,7,02/26/2026,02/08/2023
+5000001407,Habitations Boudreau inc.,3385647022,Real Estate,Jean-Philippe Perron,Customer,Drummondville,8,02/11/2026,10/12/2019
+5000001418,Habitations Blais,1166478795,Real Estate,Vanessa Boudreau,Customer,Drummondville,8,10/26/2025,07/21/2020
+5000001427,Municipalité de Daveluyville,8849057620,Government Administration,William Pouliot,Customer,Repentigny,4,12/17/2025,06/07/2024
+5000001432,Alimentation Martel,3337054979,Retail,Jean Silva,Customer,Lévis,8,08/18/2026,05/22/2022
+5000001436,Hôtellerie Cap,3376954710,Retail,Maxime Doyon,Customer,Montréal,6,06/07/2026,04/26/2023
+5000001442,Cégep De Saint-Jean-Sur-Richelieu,8833795550,Education,Aïcha Hernandez,Customer,Saint-Jean-sur-Richelieu,9,07/01/2026,02/19/2022
+5000001453,Pharmacie Boucher,3367498029,Retail,Hugo Turcotte,Customer,Trois-Rivières,9,12/26/2025,12/25/2023
+5000001456,Restaurants Lemay inc.,,Manufacturing,Luc Tremblay,Opportunity,Trois-Rivières,,09/20/2026,02/03/2026
+5000001463,Propriétés Martin inc.,1164484833,Real Estate,Jean-Philippe Perron,Customer,Québec,9,01/29/2026,01/26/2022
+5000001472,Papiers Audet-Fournier inc.,3333344120,Manufacturing,Luc Tremblay,Customer,Lévis,8,04/22/2026,12/15/2024
+5000001480,Ministère Des Transports — Direction Régionale Lanaudière,8822180071,Government Administration,Maxime Rioux,Customer,Repentigny,4,02/06/2026,03/11/2021
+5000001486,Habitations Boisvert-Charron inc.,1112514754,Real Estate,Valérie Boudreau,Customer,Trois-Rivières,6,09/21/2025,02/19/2021
+5000001496,Marché Gervais inc.,3367708876,Retail,Marie-Ève Kouassi,Customer,Sherbrooke,10,09/02/2026,02/26/2021
+5000001500,Fiducie immobilière Vallée,1187573907,Real Estate,Karine Lachance,Customer,Trois-Rivières,9,09/10/2026,03/21/2023
+5000001505,Ministère des Transports — Direction régionale Chaudière-Appalaches,8822135562,Government Administration,Aïcha Hernandez,Customer,Thetford Mines,4,10/29/2025,03/17/2020
+5000001513,Immeubles Perron ltée,1122040473,Manufacturing,Hugo Turcotte,Opportunity,Longueuil,,09/02/2026,06/19/2026
+5000001522,Immeubles Avenir ltée,3354322031,Real Estate,Vanessa Boudreau,Customer,Montréal,6,10/31/2025,12/08/2022
+5000001527,Hôtellerie Leblanc,3329911793,Retail,Andréanne Nadeau,Customer,Victoriaville,10,08/31/2026,09/25/2023
+5000001539,Municipalité de Kingsey,8840866363,Government Administration,Olivier Côté,Customer,Sherbrooke,8,07/15/2026,03/09/2023
+5000001540,Pharmacie Appalaches et associés,1188116192,Education,Amélie Audet,Opportunity,Sherbrooke,,04/13/2026,02/22/2026
+5000001547,Plastiques Michaud ltée,,Education,Luc Tremblay,Lead,Montréal,,08/12/2026,12/03/2025
+5000001557,Municipalité de Sainte-Perpétue,8813506908,Government Administration,Andréanne Hébert,Customer,Joliette,7,06/25/2026,06/07/2021
+5000001565,Marché Charron,1115669277,Retail,Mathieu Morin,Customer,Sherbrooke,6,10/20/2026,09/01/2020
+5000001574,Ville de Terrebonne,8812793895,Government Administration,Marie Simard,Customer,Terrebonne,5,09/03/2026,06/10/2021
+5000001579,Ciusss — Capitale-Nationale,8899577722,Hospital & Health Care,Amélie Audet,Customer,Québec,8,09/03/2026,05/28/2019
+5000001586,Papiers Demers,1153663670,Manufacturing,Marie Simard,Customer,Laval,9,03/31/2026,06/20/2024
+5000001589,Restaurants Concept inc.,1166277740,Retail,Marc-André Vachon,Lead,Trois-Rivières,,05/13/2026,02/09/2025
+5000001597,Hôtellerie Héritage,1121282233,Retail,Jean-Philippe Perron,Customer,Sherbrooke,,02/20/2026,01/08/2019
+5000001603,Office municipal d'habitation de Granby,8810641708,Government Administration,Valérie Boudreau,Customer,Granby,,08/06/2026,11/27/2020
+5000001614,Ville de Joliette,8812971071,Government Administration,William Pouliot,Customer,Joliette,9,09/05/2026,05/27/2022
+5000001622,Les Développements Bélanger inc.,,Real Estate,Catherine Ménard,Customer,Montréal,10,11/10/2025,05/17/2022
+5000001628,Composantes Rousseau,,Manufacturing,Jean-Philippe Perron,Customer,Québec,9,06/25/2026,10/16/2019
+5000001632,Centre de services scolaire de la Beauce-Etchemin,8826824351,Education,Diego Lamontagne,Customer,Québec,5,09/16/2026,02/06/2021
+5000001640,Pharmacie Champlain et associés,1120322051,Retail,Olivier Côté,Customer,Montréal,7,05/29/2026,01/07/2020
+5000001645,Municipalité de Saint-Césaire,8883505067,Government Administration,Valérie Boudreau,Customer,Trois-Rivières,7,09/27/2026,08/02/2023
+5000001656,Fiducie immobilière Parent,1183486595,Manufacturing,Marie Simard,Opportunity,Victoriaville,,10/09/2026,05/21/2026
+5000001664,Cégep De Bécancour,8876826251,Education,Jean-Philippe Perron,Customer,Bécancour,8,03/13/2026,12/01/2021
+5000001670,Les Développements St-Pierre,1133098048,Real Estate,Amélie Audet,Customer,Québec,10,05/19/2026,03/12/2019
+5000001679,Office municipal d'habitation de Sherbrooke,8823047864,Government Administration,Catherine Ménard,Customer,Sherbrooke,8,11/22/2025,11/16/2022
+5000001684,Habitations Cap,1133441929,Real Estate,Andréanne Hébert,Customer,Repentigny,4,05/22/2026,06/28/2022
+5000001691,Propriétés Bérubé,1146778384,Real Estate,Luc Tremblay,Customer,Trois-Rivières,10,05/18/2026,03/02/2024
+5000001700,PHARMACIE CHAMPLAIN ET ASSOCIÉS,1120322051,Retail,Olivier Côté,Customer,Montréal,,07/25/2024,01/07/2020
+5000001706,Société québécoise des infrastructures — Montérégie,8870360325,Government Administration,Aïcha Hernandez,Customer,Granby,8,03/29/2026,03/21/2023
+5000001709,Technologies Lapointe,1140720461,Manufacturing,Catherine Ménard,Customer,Québec,8,12/08/2025,03/24/2022
+5000001719,Immeubles Nadeau-Bernier ltée,,Education,Maxime Doyon,Opportunity,Drummondville,,06/22/2026,03/10/2026
+5000001722,INVESTISSEMENTS BOUDREAU-FOURNIER,1110386229,Real Estate,Diego Lamontagne,Customer,Laval,,07/12/2025,04/16/2020
+5000001730,Fiducie immobilière Labbé,1152901221,Manufacturing,Andréanne Nadeau,Lead,Drummondville,,10/20/2026,06/17/2025
+5000001738,Immeubles Pelletier,,Real Estate,Marie-Ève Kouassi,Customer,Sherbrooke,10,09/21/2026,08/18/2024
+5000001749,Plastiques Lavoie-Bourassa,1186052093,Manufacturing,Karine Leblanc,Customer,Sherbrooke,8,08/05/2026,11/18/2021
+5000001750,Plastiques Pinacle ltée,1180094972,Manufacturing,Marie Simard,Customer,Magog,8,09/29/2025,07/08/2024
+5000001760,Technologies Thériault inc.,1146393312,Manufacturing,Maxime Doyon,Customer,Québec,7,12/05/2025,05/02/2021
+5000001770,QUINCAILLERIE RIVERAIN,1179523183,Retail,Luc Tremblay,Customer,Sherbrooke,,03/12/2026,06/09/2021
+5000001772,Restaurants Grenier inc.,1142258910,Retail,Marie Simard,Customer,Sherbrooke,6,07/15/2026,04/20/2021
+5000001784,Hôtellerie Fleuve inc.,,Manufacturing,Nathalie Ouellet,Opportunity,Terrebonne,,04/27/2026,03/04/2026
+5000001790,Les Développements Brassard inc.,1170825963,Real Estate,Jean-Philippe Perron,Customer,Laval,7,02/24/2026,05/17/2024
+5000001798,Municipalité de Batiscan,8842565787,Government Administration,Maxime Rioux,Customer,Saint-Jean-sur-Richelieu,8,09/04/2026,04/10/2019
+5000001802,Centre de services scolaire de la Région-de-Sherbrooke,8898383063,Education,Andréanne Nadeau,Customer,Saint-Georges,9,10/21/2026,06/21/2023
+5000001812,Municipalité de Sainte-Anne-de-la-Pérade,8859052900,Government Administration,Jean Silva,Customer,Lévis,10,06/28/2026,03/22/2019
+5000001813,Automobiles Lavoie-Larouche inc.,1156703846,Retail,Sébastien Gingras,Customer,Joliette,6,12/22/2025,02/09/2021
+5000001823,Aliments Bolduc inc.,3321722498,Manufacturing,Marc-André Vachon,Customer,Terrebonne,7,04/24/2026,06/25/2019
+5000001827,Propriétés Appalaches inc.,3375310710,Real Estate,Amélie Audet,Customer,Lévis,,03/29/2026,08/20/2024
+5000001836,Métallurgie Lebel inc.,3395572268,Manufacturing,Marc-André Vachon,Customer,Drummondville,9,08/03/2026,12/02/2023
+5000001841,Municipalité de Saint-Isidore,8899306486,Government Administration,Amélie Audet,Customer,Drummondville,4,09/19/2026,11/10/2022
+5000001849,Municipalité de Saint-Tite,,Government Administration,Valérie Boudreau,Customer,Trois-Rivières,9,12/11/2025,02/08/2019
+5000001855,Quincaillerie Dupuis,3317158719,Retail,Amélie Audet,Customer,Trois-Rivières,6,09/05/2026,10/24/2019
+5000001863,CIUSSS — Montérégie,8846465041,Hospital & Health Care,Hugo Turcotte,Customer,Granby,7,02/15/2026,09/11/2022
+5000001873,Plastiques Estrien ltée,1116751108,Manufacturing,Jean Silva,Customer,Sherbrooke,8,10/11/2026,01/16/2020
+5000001879,Centre de la petite enfance Les Petits Pas,1157910338,Education,Valérie Boudreau,Customer,Saint-Georges,9,10/01/2026,09/09/2019
+5000001884,Hôtellerie Bellevue inc.,1177051230,Real Estate,Jean Silva,Lead,Sherbrooke,,07/03/2026,12/11/2024
+5000001893,Centre de services scolaire des Chênes,8860911888,Education,Hugo Turcotte,Customer,Drummondville,8,10/17/2026,07/20/2019
+5000001898,Gestion Lefebvre inc.,,Manufacturing,Vanessa Boudreau,Opportunity,Laval,,05/13/2026,10/23/2025
+5000001906,Énergie Fleuve inc.,1141964560,Real Estate,Mathieu Morin,Opportunity,Terrebonne,,04/15/2026,08/04/2025
+5000001917,Municipalité de Warwick,8867595603,Government Administration,Jean Silva,Customer,Québec,10,05/23/2026,06/14/2019
+5000001918,Cégep de Joliette,,Education,Olivier Côté,Customer,Joliette,10,06/11/2026,03/24/2019
+5000001927,Municipalité de Saint-Henri,8858870688,Government Administration,Karine Leblanc,Customer,Terrebonne,8,06/01/2026,09/26/2019
+5000001936,Marché Sirois,1146912638,Retail,Sébastien Gingras,Customer,Québec,,07/19/2026,12/18/2020
+5000001939,Habitations Turcotte inc.,1195487159,Real Estate,Josée Chen,Customer,Montréal,10,01/13/2026,06/09/2023
+5000001951,Plastiques Cloutier,3317170026,Manufacturing,Jean-Philippe Perron,Customer,Québec,7,09/25/2025,04/13/2021
+5000001958,Gestion Doyon inc.,1141430167,Real Estate,Catherine Ménard,Customer,Granby,8,01/03/2026,08/28/2019
+5000001963,Les Développements Marcoux inc.,1181182912,Real Estate,Andréanne Nadeau,Customer,Sherbrooke,7,10/22/2025,07/05/2019
+5000001967,Cégep de Sherbrooke,,Education,Nathalie Ouellet,Customer,Sherbrooke,8,03/24/2026,12/10/2020
+5000001975,Aliments Cap inc.,1130873928,Manufacturing,Marc-André Vachon,Customer,Longueuil,8,05/02/2026,09/08/2024
+5000001987,Marché Bellevue inc.,3355031218,Retail,Karine Leblanc,Customer,Québec,5,06/26/2026,08/27/2022
+5000001994,Centre de la petite enfance Les Hiboux,1114123977,Education,Luc Tremblay,Customer,Bécancour,8,04/18/2026,06/13/2022
+5000001995,Ville de Saint-Jean-sur-Richelieu,8870776721,Government Administration,Diego Lamontagne,Customer,Saint-Jean-sur-Richelieu,6,07/22/2026,02/01/2020
+5000002003,Plastiques Girard ltée,1182638838,Retail,Amélie Audet,Opportunity,Montréal,,04/08/2026,05/08/2026
+5000002012,Les Développements Avenir inc.,1151254789,Real Estate,Vanessa Boudreau,Customer,Sherbrooke,8,03/16/2026,08/27/2021
+5000002019,Quincaillerie Lachance-Richard inc.,,Real Estate,Hugo Grenier,Opportunity,Drummondville,,08/06/2026,11/23/2025
+5000002025,Fiducie immobilière Appalaches,3391273442,Real Estate,Karine Leblanc,Customer,Terrebonne,6,01/12/2026,09/17/2020
+5000002032,Immeubles Parent ltée,1161537273,Real Estate,Maxime Rioux,Customer,Trois-Rivières,9,07/29/2026,09/21/2020
+5000002042,Énergie Lemieux,1154201118,Manufacturing,Maxime Doyon,Customer,Saint-Hyacinthe,5,09/28/2026,05/09/2022
+5000002044,Immeubles Fleuve ltée,3370826078,Real Estate,William Pouliot,Customer,Montréal,5,11/17/2025,03/20/2019
+5000002056,Habitations Nadeau-Gosselin,1174063868,Real Estate,Nathalie Ouellet,Customer,Terrebonne,8,12/31/2025,04/26/2024
+5000002061,MUNICIPALITÉ DE SAINT-GERMAIN-DE-GRANTHAM,8860113189,Government Administration,Mathieu Morin,Customer,Granby,,11/04/2025,04/14/2023
+5000002065,Laiterie Bellevue,1164512814,Manufacturing,Olivier Champagne,Customer,Montréal,10,10/21/2025,08/25/2023
+5000002077,Ville De Saint-Georges,8836096363,Government Administration,Andréanne Nadeau,Customer,Saint-Georges,8,09/01/2026,11/22/2023
+5000002084,Habitations Rive-Sud,1174210638,Real Estate,Andréanne Hébert,Customer,Lévis,8,09/29/2025,02/24/2023
+5000002086,Laiterie Belvédère,1187992379,Manufacturing,Olivier Côté,Customer,Saint-Georges,9,10/25/2025,07/17/2023
+5000002093,Municipalité de Farnham,8866523546,Government Administration,Hugo Grenier,Customer,Victoriaville,9,08/01/2026,09/06/2019
+5000002101,Gestion Langlois-Nadeau inc.,1148482165,Manufacturing,Olivier Côté,Opportunity,Drummondville,,06/07/2026,05/10/2025
+5000002109,Immeubles Lebel,1150732315,Real Estate,Olivier Champagne,Customer,Trois-Rivières,5,05/22/2026,08/19/2023
+5000002118,Groupe immobilier Veilleux inc.,3353914801,Real Estate,Aïcha Hernandez,Customer,Montréal,,07/13/2026,09/07/2021
+5000002124,Immeubles Riverain ltée,1163202221,Real Estate,Maxime Doyon,Opportunity,Québec,,09/29/2026,12/27/2025
+5000002134,Aliments Laurentide,1172047849,Manufacturing,Jean Silva,Customer,Shawinigan,10,03/04/2026,09/06/2024
+5000002139,Fiducie immobilière Estrien,1120072973,Real Estate,Olivier Côté,Customer,Montréal,8,04/05/2026,05/01/2023
+5000002146,Investissements Avenir inc.,1145637355,Manufacturing,Jean Silva,Opportunity,Québec,,05/24/2026,03/15/2025
+5000002150,Cégep de Longueuil,8815962142,Education,Karine Audet,Customer,Longueuil,8,04/24/2026,01/03/2021
+5000002158,Investissements Leclerc-Lacroix,3326546730,Real Estate,Amélie Audet,Customer,Trois-Rivières,10,11/11/2025,11/22/2021
+5000002167,Métallurgie Charron inc.,1175727670,Manufacturing,William Pouliot,Customer,Lévis,8,07/31/2026,04/08/2020
+5000002176,Quincaillerie Riverain,1179523183,Retail,Luc Tremblay,Customer,Sherbrooke,5,03/29/2026,06/09/2021
+5000002180,Ministère Des Transports — Direction Régionale Montréal,8828434440,Government Administration,Vanessa Boudreau,Customer,Montréal,10,11/20/2025,06/11/2021
+5000002184,Restaurants Couture-Gagnon inc.,,Retail,Sébastien Gingras,Customer,Montréal,5,04/10/2026,08/16/2020
+5000002193,Métallurgie Nadeau inc.,1136570522,Manufacturing,Aïcha Hernandez,Customer,Québec,9,04/25/2026,10/12/2024
+5000002202,Propriétés Côté inc.,1116847815,Real Estate,Marie-Ève Kouassi,Customer,Bécancour,8,10/17/2025,08/02/2024
+5000002209,Municipalité de Yamachiche,8830127385,Government Administration,Olivier Côté,Customer,Longueuil,8,01/27/2026,04/25/2022
+5000002213,Municipalité de Pierreville,8853256054,Government Administration,Olivier Champagne,Customer,Sherbrooke,8,01/29/2026,10/22/2022
+5000002225,Quincaillerie Fortin inc.,1145460061,Retail,Jean Silva,Customer,Terrebonne,4,10/05/2026,05/04/2019
+5000002231,Restaurants Lauriers inc.,1164938952,Retail,Andréanne Hébert,Customer,Montréal,4,02/25/2026,08/28/2020
+5000002238,Ville de Laval,8877528997,Government Administration,Jean-Philippe Perron,Customer,Laval,9,05/03/2026,08/19/2019
+5000002244,Municipalité de Ascot-Corner,,Government Administration,Sébastien Gingras,Customer,Saint-Hyacinthe,9,05/05/2026,07/28/2024
+5000002249,Ville De Repentigny,8880462646,Government Administration,Valérie Boudreau,Customer,Repentigny,8,04/18/2026,07/09/2024
+5000002256,Cégep de Thetford Mines,8875036270,Education,Karine Audet,Customer,Thetford Mines,,08/23/2026,05/22/2019
+5000002262,Centre De Services Scolaire Des Hautes-Rivières,8817116330,Education,Mathieu Morin,Customer,Lévis,,04/22/2026,10/05/2019
+5000002274,Restaurants Martin inc.,1123405067,Retail,Hugo Grenier,Opportunity,Sherbrooke,,06/05/2026,06/14/2026
+5000002279,Composantes Chabot,,Manufacturing,Catherine Ménard,Customer,Trois-Rivières,8,03/26/2026,04/24/2019
+5000002282,Ciusss — Centre-Du-Québec,8896908503,Hospital & Health Care,Karine Leblanc,Customer,Victoriaville,6,07/08/2026,11/26/2021
+5000002289,Municipalité de Saint-Germain-de-Grantham,8860113189,Government Administration,Mathieu Morin,Customer,Granby,6,09/25/2026,04/14/2023
+5000002298,Pharmacie Labrecque et associés,,Manufacturing,Vanessa Boudreau,Opportunity,Thetford Mines,,08/16/2026,07/28/2025
+5000002308,Ministère Des Transports — Direction Régionale Capitale-Nationale,8813068554,Government Administration,Olivier Côté,Customer,Québec,10,09/12/2026,01/20/2022
+5000002311,Ville De Bécancour,8897878337,Government Administration,Catherine Ménard,Customer,Bécancour,9,01/31/2026,10/20/2023
+5000002319,Restaurants St-Pierre,1176002116,Retail,Valérie Boudreau,Customer,Bécancour,10,12/31/2025,11/10/2023
+5000002325,Investissements Saint-Maurice,3342655584,Real Estate,Olivier Champagne,Customer,Québec,10,01/11/2026,02/10/2020

@@ -1,0 +1,110 @@
+// =====================================================================
+//  Modèle sémantique SM_Boreal (Direct Lake) — mesures
+//  Règle d'or : les tables gold portent déjà les calculs lourds.
+//  Ici on ne fait que SUM et DIVIDE. Un % se recalcule toujours comme
+//  DIVIDE(SUM(numérateur), SUM(dénominateur)) — jamais SUM(%).
+//  Crée une table de mesures vide (« _Mesures ») et range-les par dossier.
+// =====================================================================
+
+// ---------- Dossier : Projets  (table gold.projet_synthese)
+Valeur révisée = SUM ( projet_synthese[valeur_revisee] )
+Coût à date = SUM ( projet_synthese[cout_total] )
+Coût projeté à la fin = SUM ( projet_synthese[cout_projete_fin] )
+Marge projetée = SUM ( projet_synthese[marge_projetee] )
+Marge projetée % = DIVIDE ( [Marge projetée], [Valeur révisée] )
+Marge prévue % = DIVIDE ( SUM ( projet_synthese[marge_prevue] ), SUM ( projet_synthese[valeur_contrat] ) )
+Érosion de marge (pts) = [Marge projetée %] - [Marge prévue %]
+Sur (+) / sous (-) facturation = SUM ( projet_synthese[sur_sous_facturation] )
+Retenues détenues par les clients = SUM ( projet_synthese[retenues_detenues] )
+Nb projets actifs =
+    CALCULATE ( COUNTROWS ( projet_synthese ), projet_synthese[statut] IN { "En cours", "Suspendu" } )
+Nb projets en rouge =
+    CALCULATE ( COUNTROWS ( projet_synthese ), projet_synthese[sante] = "Rouge" )
+Avancement (coût) % =
+    DIVIDE ( SUM ( projet_synthese[cout_total] ), SUM ( projet_synthese[budget_revise] ) )
+
+// ---------- Dossier : Courbe en S  (gold.projet_mensuel)
+//  Les colonnes *_cumul sont SEMI-ADDITIVES : on prend la valeur du dernier mois visible.
+Coût du mois = SUM ( projet_mensuel[cout_mois] )
+Coût cumulé =
+    VAR _dernier = MAX ( projet_mensuel[mois] )
+    RETURN CALCULATE ( SUM ( projet_mensuel[cout_cumul] ), projet_mensuel[mois] = _dernier )
+Facturé cumulé =
+    VAR _dernier = MAX ( projet_mensuel[mois] )
+    RETURN CALCULATE ( SUM ( projet_mensuel[facture_ht_cumul] ), projet_mensuel[mois] = _dernier )
+Budget révisé (référence) = MAX ( projet_mensuel[budget_revise] )   // à utiliser projet par projet
+
+// ---------- Dossier : Budget vs réel  (gold.projet_code_cout)
+Budget révisé = SUM ( projet_code_cout[budget_revise] )
+Coût réel = SUM ( projet_code_cout[cout_reel] )
+Écart budget = SUM ( projet_code_cout[ecart] )
+Budget consommé % = DIVIDE ( [Coût réel], [Budget révisé] )
+
+// ---------- Dossier : Divisions  (gold.division_mensuel)
+//  Mois complets seulement (est_mois_complet) : le mois en cours est incomplet.
+Revenus division = CALCULATE ( SUM ( division_mensuel[revenus] ), division_mensuel[est_mois_complet] = TRUE () )
+Coûts = CALCULATE ( SUM ( division_mensuel[couts] ), division_mensuel[est_mois_complet] = TRUE () )
+Marge brute = CALCULATE ( SUM ( division_mensuel[marge_brute] ), division_mensuel[est_mois_complet] = TRUE () )
+Marge brute % = DIVIDE ( [Marge brute], [Revenus division] )
+Objectif CA = SUM ( division_mensuel[objectif_ca] )
+Atteinte objectif % = DIVIDE ( [Revenus division], CALCULATE ( [Objectif CA], division_mensuel[est_mois_complet] = TRUE () ) )
+Objectif de marge % = DIVIDE ( SUM ( division_mensuel[objectif_marge] ), [Objectif CA] )
+Revenus — même mois an passé = CALCULATE ( SUM ( division_mensuel[revenus_meme_mois_an_passe] ), division_mensuel[est_mois_complet] = TRUE () )
+Croissance vs an passé % = DIVIDE ( [Revenus division] - [Revenus — même mois an passé], [Revenus — même mois an passé] )
+Revenus cumul exercice =
+    VAR _dernier = CALCULATE ( MAX ( division_mensuel[mois] ), division_mensuel[est_mois_complet] = TRUE () )
+    RETURN CALCULATE ( SUM ( division_mensuel[revenus_cumul_exercice] ), division_mensuel[mois] = _dernier )
+Objectif cumul exercice =
+    VAR _dernier = CALCULATE ( MAX ( division_mensuel[mois] ), division_mensuel[est_mois_complet] = TRUE () )
+    RETURN CALCULATE ( SUM ( division_mensuel[objectif_cumul_exercice] ), division_mensuel[mois] = _dernier )
+
+// ---------- Dossier : Entreprise  (gold.kpi_mensuel)
+Revenus 12 mois glissants =
+    VAR _dernier = CALCULATE ( MAX ( kpi_mensuel[mois] ), kpi_mensuel[est_mois_complet] = TRUE () )
+    RETURN CALCULATE ( SUM ( kpi_mensuel[revenus_12_mois_glissants] ), kpi_mensuel[mois] = _dernier )
+Carnet de commandes =
+    VAR _dernier = CALCULATE ( MAX ( kpi_mensuel[mois] ), kpi_mensuel[est_mois_complet] = TRUE () )
+    RETURN CALCULATE ( SUM ( kpi_mensuel[carnet_commandes] ), kpi_mensuel[mois] = _dernier )
+DSO (jours) =
+    VAR _dernier = CALCULATE ( MAX ( kpi_mensuel[mois] ), kpi_mensuel[est_mois_complet] = TRUE () )
+    RETURN
+        DIVIDE (
+            CALCULATE ( SUM ( kpi_mensuel[comptes_recevables_fin_mois] ), kpi_mensuel[mois] = _dernier ),
+            CALCULATE ( SUM ( kpi_mensuel[facturation_ttc_3_mois] ), kpi_mensuel[mois] = _dernier )
+        ) * 91
+Effectif moyen = AVERAGE ( kpi_mensuel[effectif_actif] )
+Heures supp. % = DIVIDE ( SUM ( kpi_mensuel[heures_supp] ), SUM ( kpi_mensuel[heures_total] ) )
+
+// ---------- Dossier : Main-d'œuvre  (gold.main_oeuvre_hebdo, gold.employe_mensuel)
+Heures = SUM ( main_oeuvre_hebdo[heures_total] )
+Heures supplémentaires = SUM ( main_oeuvre_hebdo[heures_supp] )
+% heures supp. = DIVIDE ( [Heures supplémentaires], [Heures] )
+Taux d'imputation % = DIVIDE ( SUM ( main_oeuvre_hebdo[heures_imputables] ), [Heures] )
+Coût main-d'œuvre = SUM ( main_oeuvre_hebdo[cout_main_oeuvre] )
+Coût horaire chargé moyen = DIVIDE ( [Coût main-d'œuvre], [Heures] )
+Taux d'utilisation employé % =
+    DIVIDE ( SUM ( employe_mensuel[heures_imputables] ), SUM ( employe_mensuel[heures_total] ) )
+
+// ---------- Dossier : Comptes recevables / payables
+Comptes recevables = SUM ( comptes_recevables[solde] )
+Recevables en retard = CALCULATE ( [Comptes recevables], comptes_recevables[jours_retard] > 0 )
+Recevables > 90 jours = CALCULATE ( [Comptes recevables], comptes_recevables[tranche_ordre] = 5 )
+% recevables en retard = DIVIDE ( [Recevables en retard], [Comptes recevables] )
+Comptes payables = SUM ( comptes_payables[montant_ttc] )
+Payables en retard = CALCULATE ( [Comptes payables], comptes_payables[jours_retard] > 0 )
+
+// ---------- Dossier : Fournisseurs et équipements
+Achats = SUM ( fournisseur_annuel[montant_ht] )
+Nb fournisseurs classe A = CALCULATE ( DISTINCTCOUNT ( fournisseur_annuel[fournisseur_maitre_id] ), fournisseur_annuel[classe_abc] = "A" )
+Taux d'utilisation équipement % = DIVIDE ( SUM ( equipement_mensuel[heures] ), SUM ( equipement_mensuel[heures_disponibles] ) )
+Revenu interne équipement = SUM ( equipement_mensuel[revenu_interne] )
+
+// ---------- Dossier : Clients  (gold.client_synthese)
+Délai moyen de paiement (jours) =
+    DIVIDE ( SUM ( client_synthese[jours_paiement_ponderes] ), SUM ( client_synthese[montant_paye] ) )
+Marge réalisée clients % =
+    DIVIDE (
+        SUM ( client_synthese[valeur_projets_termines] ) - SUM ( client_synthese[cout_projets_termines] ),
+        SUM ( client_synthese[valeur_projets_termines] )
+    )
+Revenus 12 derniers mois (clients) = SUM ( client_synthese[revenus_12_mois] )

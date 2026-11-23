@@ -1,0 +1,30 @@
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#E8F0FA","primaryBorderColor":"#2B6CB0","primaryTextColor":"#1B2A41","clusterBkg":"#F7F7F5","clusterBorder":"#C8C6C4","lineColor":"#484644","fontFamily":"Segoe UI, Arial"}}}%%
+flowchart LR
+    subgraph SRC["Sources"]
+        ERP[("SQL Server<br/>BorealERP<br/>21 tables")]
+        CRM["Export CRM<br/>(CSV)"]
+        XLS["Objectifs finance<br/>(Excel)"]
+    end
+    GW{{"Passerelle<br/>de données locale"}}
+    subgraph FAB["Microsoft Fabric"]
+        CJ["Copy jobs<br/>complet + incrémental"]
+        DF["Dataflow Gen2"]
+        LH[("LH_Bronze<br/>Lakehouse")]
+        subgraph WH["WH_Boreal · Warehouse (T-SQL)"]
+            BR["bronze<br/>vues"] --> STG["stg<br/>nettoyage,<br/>quarantaine"] --> MDM["mdm<br/>client et<br/>fournisseur uniques"] --> DW["dw<br/>étoile, SCD2"] --> GOLD["gold<br/>tables pré-calculées"]
+        end
+        SM["SM_Boreal<br/>modèle Direct Lake<br/>57 mesures, RLS dynamique"]
+        RPT["Rapports Power BI<br/>+ App par audience"]
+        PL["PL_Boreal_Quotidien<br/>pipeline planifié"]
+        ACT["Activator<br/>alerte"]
+    end
+    ERP --> GW --> CJ --> LH
+    CRM --> DF
+    XLS --> DF --> LH
+    LH --> BR
+    GOLD --> SM --> RPT
+    SM -.-> ACT
+    PL -. orchestre .-> CJ
+    PL -.-> DF
+    PL -.-> WH
+    PL -. recadre .-> SM
