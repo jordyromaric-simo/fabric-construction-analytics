@@ -7,8 +7,6 @@
      • retirer les lignes supprimées logiquement (IsDeleted = 1)
      • typer et normaliser (statuts, téléphones, codes postaux, noms)
      • isoler les lignes invalides dans des tables de rejet (quarantaine)
-   Technique : DROP + CREATE TABLE AS SELECT (CTAS) — rapide et simple
-   pour une couche intermédiaire que personne n'interroge directement.
    ===================================================================== */
 
 /* ------------------------------------------------------------------ RÉFÉRENCE */
