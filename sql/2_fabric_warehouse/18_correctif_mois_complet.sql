@@ -7,12 +7,6 @@
    Correctif : une colonne est_mois_complet dans les 2 tables gold
    mensuelles, recalculée à chaque chargement à partir de la date de
    référence. Les mesures DAX ne retiennent que les mois complets.
-
-   Ordre :
-     1. exécuter CE script (ajoute les colonnes aux tables existantes) ;
-     2. ré-exécuter tout 15_gold.sql (recrée les procédures ; les
-        CREATE TABLE sont ignorés car les tables existent déjà) ;
-     3. exécuter la partie 3 ci-dessous (recharge + vérification).
    ===================================================================== */
 
 -- 1. Ajouter la colonne (nullable : seul type d'ajout permis sur une table existante)
