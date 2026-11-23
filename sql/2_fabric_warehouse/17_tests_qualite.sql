@@ -1,10 +1,5 @@
 /* =====================================================================
    Script 17 : tests de qualité et de réconciliation
-   ---------------------------------------------------------------------
-   À lancer après chaque chargement. Un bon pipeline de données se
-   PROUVE : chaque couche doit se réconcilier avec la précédente.
-   Résultat attendu : la colonne « resultat » vaut OK partout (ou un
-   écart que tu sais expliquer).
    ===================================================================== */
 
 /* T1. Les heures ne se perdent pas entre stg et dw */
