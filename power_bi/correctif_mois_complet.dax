@@ -1,9 +1,5 @@
 // ================================================================
-//  Correctif « mois complet » — à coller dans la vue requête DAX
-//  de SM_Boreal, Run, puis « Update model with changes ».
-//  Les mesures existantes sont REMPLACÉES (même nom, nouvelle formule).
-//  Règle : on ne présente que les mois terminés à la date de référence.
-//  L'objectif reste affiché pour tous les mois (c'est un plan).
+//  Correctif « mois complet »
 // ================================================================
 DEFINE
     // ---------- Divisions : montants des mois complets seulement
