@@ -3,12 +3,7 @@
    Script 01 : création de la base source « BorealERP » (SQL Server local)
    ---------------------------------------------------------------------
    Simule l'ERP d'un entrepreneur général québécois (paie, projets,
-   achats, facturation, équipements). C'est la SOURCE EXTERNE que tu
-   vas brancher à Microsoft Fabric.
-
-   Prérequis : SQL Server 2017 ou plus récent (2022/2025 Developer conseillé,
-               gratuit) + SSMS.
-   Exécution  : ouvrir dans SSMS, F5. Durée : quelques secondes.
+   achats, facturation, équipements).
    ===================================================================== */
 USE master;
 GO
