@@ -3,15 +3,6 @@
    ---------------------------------------------------------------------
    Une vue par table brute du lakehouse LH_Bronze (requête inter-bases :
    l'entrepôt lit le point de terminaison SQL du lakehouse du même espace).
-
-   >>> SEUL ENDROIT À ADAPTER si tes tables bronze ont d'autres noms. <<<
-   Convention attendue (à saisir dans l'étape « Mappage » du Copy job) :
-       erp_<schéma>_<table> en minuscules   ex. erp_paie_feuilletemps
-   Tables produites par le Dataflow Gen2 :
-       ext_crm_companies, ext_objectifs_ca, ext_objectifs_marge
-
-   Avantage pédagogique : tout le reste du code lit bronze.xxx et ne
-   dépend jamais du nom physique dans le lac.
    ===================================================================== */
 
 CREATE OR ALTER VIEW bronze.ref_region AS SELECT * FROM LH_Bronze.dbo.erp_ref_region;
