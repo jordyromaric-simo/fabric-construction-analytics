@@ -1,16 +1,5 @@
 /* =====================================================================
    Script 02 : chargement des données (≈ 1,4 million de lignes)
-   ---------------------------------------------------------------------
-   1. Décompresse le dossier « donnees » dans un dossier que le service
-      SQL Server peut lire. Le plus simple : C:\BorealERP\donnees\
-      (évite Téléchargements/Bureau : le compte de service n'y a pas accès)
-   2. Ajuste @Dossier ci-dessous si tu as choisi un autre emplacement.
-   3. F5. Durée : 1 à 3 minutes.
-
-   Erreur « Operating system error code 5 (Access is denied) » ?
-   → le compte de service SQL Server n'a pas accès au dossier. Clic droit
-     sur le dossier > Propriétés > Sécurité > ajouter « Tout le monde »
-     en lecture, ou déplace le dossier sous C:\.
    ===================================================================== */
 USE BorealERP;
 GO
