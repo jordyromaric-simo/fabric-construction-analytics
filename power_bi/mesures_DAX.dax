@@ -1,9 +1,5 @@
 // =====================================================================
 //  Modèle sémantique SM_Boreal (Direct Lake) — mesures
-//  Règle d'or : les tables gold portent déjà les calculs lourds.
-//  Ici on ne fait que SUM et DIVIDE. Un % se recalcule toujours comme
-//  DIVIDE(SUM(numérateur), SUM(dénominateur)) — jamais SUM(%).
-//  Crée une table de mesures vide (« _Mesures ») et range-les par dossier.
 // =====================================================================
 
 // ---------- Dossier : Projets  (table gold.projet_synthese)
