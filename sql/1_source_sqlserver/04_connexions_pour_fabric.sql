@@ -1,13 +1,5 @@
 /* =====================================================================
    Script 04 : comptes SQL utilisés par Fabric (via la passerelle)
-   ---------------------------------------------------------------------
-   Prérequis : l'authentification « SQL Server et Windows » doit être
-   activée (SSMS > clic droit sur le serveur > Propriétés > Sécurité >
-   « Mode d'authentification SQL Server et Windows », puis redémarrer le
-   service SQL Server).
-
-   Remplace les mots de passe avant d'exécuter. Ne les note pas dans un
-   fichier partagé : tu les saisiras dans la connexion Fabric.
    ===================================================================== */
 USE master;
 GO
