@@ -1,8 +1,4 @@
 // ================================================================
-//  À coller dans la VUE DE REQUÊTE DAX du modèle SM_Boreal, puis
-//  cliquer sur « Update model with changes » (ou les liens « Update
-//  model: Add new measure » au-dessus de DEFINE) pour enregistrer
-//  toutes les mesures dans le modèle en une fois.
 //  Chaque mesure est rangée dans la table gold qu'elle lit.
 // ================================================================
 DEFINE
