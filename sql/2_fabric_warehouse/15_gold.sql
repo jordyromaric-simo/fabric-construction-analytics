@@ -5,12 +5,6 @@
    sémantique Direct Lake ne fait que des SOMMES et des DIVISIONS.
      • cumuls, YTD, même mois l'an passé  → fenêtres SQL (SUM OVER, jointure N-1)
      • âge des comptes, retards, santé    → calculés à la date de référence
-     • classements, Pareto (ABC)          → DENSE_RANK + cumul
-   ATTENTION aux ratios : une table gold contient le numérateur ET le
-   dénominateur ; dans Power BI on recalcule le % avec DIVIDE(SUM, SUM).
-   Additionner des pourcentages pré-calculés donne des résultats faux.
-   ===================================================================== */
-
 /* ================================================================== DDL */
 IF OBJECT_ID('gold.projet_synthese') IS NULL
 CREATE TABLE gold.projet_synthese (
