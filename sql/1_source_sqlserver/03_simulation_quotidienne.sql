@@ -1,15 +1,5 @@
 /* =====================================================================
    Script 03 : simulation d'activité quotidienne dans l'ERP
-   ---------------------------------------------------------------------
-   Pourquoi ? Pour pratiquer le chargement INCRÉMENTAL dans Fabric : chaque
-   exécution ajoute une journée de travail (heures, factures, paiements…)
-   et modifie des lignes existantes (approbations, paiements) en mettant
-   à jour ModifiedAt — exactement ce que le Copy job détecte.
-
-   Utilisation :
-       EXEC util.usp_SimulerJournee;           -- avance d'un jour
-       EXEC util.usp_SimulerPeriode @NbJours = 7;  -- avance d'une semaine
-   Les données d'origine s'arrêtent le 2026-10-22 ; l'horloge démarre là.
    ===================================================================== */
 USE BorealERP;
 GO
