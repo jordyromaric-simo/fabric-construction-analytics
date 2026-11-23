@@ -69,7 +69,7 @@ Ce que le projet m'a appris se trouve surtout ici : un chiffre juste en SQL peut
 | Rapport vide pendant quelques minutes à chaque chargement | La mise à jour automatique de Direct Lake se déclenchait entre `TRUNCATE` et `INSERT` | Mise à jour automatique désactivée ; recadrage du modèle en dernière activité du pipeline |
 | Trou de deux semaines dans les heures de fin juillet | Vacances de la construction au Québec, pas une erreur | Expliqué dans le rapport plutôt que « corrigé » |
 | Activité du pipeline bloquée en « In progress » | Le journal d'audit montrait toutes les couches terminées en 2 minutes | L'écran n'était pas actualisé : vérifier à la source avant d'annuler |
-| 45 factures fournisseurs en double (642 580 $), 2 130 lignes sans code de coût (12,3 M$) | Tests de qualité (`17_tests_qualite.sql`) | Doublons marqués en staging (`est_doublon`) et exclus des coûts ; lignes sans code rattachées au membre « inconnu » (-1) pour ne perdre aucun montant |
+| 45 factures fournisseurs en double (642 580 \$), 2 130 lignes sans code de coût (12,3 M\$) | Tests de qualité (`17_tests_qualite.sql`) | Doublons marqués en staging (`est_doublon`) et exclus des coûts ; lignes sans code rattachées au membre « inconnu » (-1) pour ne perdre aucun montant |
 
 ## Sécurité
 
