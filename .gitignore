@@ -16,3 +16,16 @@ __pycache__/
 # Système
 .DS_Store
 Thumbs.db
+
+
+# Secrets et configuration locale
+.env
+*.env
+secrets.*
+
+# Éditeurs
+.vscode/
+.vs/
+
+# Journaux
+*.log
