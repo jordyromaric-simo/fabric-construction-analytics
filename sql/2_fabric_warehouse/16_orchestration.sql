@@ -1,11 +1,5 @@
 /* =====================================================================
    Script 16 : procédure d'orchestration
-   ---------------------------------------------------------------------
-   Une seule procédure enchaîne stg → mdm → dw → gold avec journalisation.
-   Dans le pipeline Fabric, tu peux :
-     • soit appeler cette procédure (1 activité « Procédure stockée »),
-     • soit appeler stg/mdm/dw/gold séparément (4 activités enchaînées) —
-       plus pédagogique : on voit chaque couche réussir ou échouer.
    ===================================================================== */
 CREATE OR ALTER PROCEDURE audit.usp_executer_chargement_complet
 AS
