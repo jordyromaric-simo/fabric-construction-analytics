@@ -107,15 +107,6 @@ Le pipeline `PL_Boreal_Quotidien` lance les trois chargements bronze en parallè
 
 Microsoft Fabric (lakehouse, entrepôt, Copy job, Dataflow Gen2, pipeline, Activator) · T-SQL avancé (fonctions de fenêtrage, `MERGE`, CTAS, gestion d'erreurs) · modélisation dimensionnelle et SCD 2 · gestion des données de référence · Power BI (Direct Lake, DAX, RLS dynamique, App) · qualité des données · orchestration et journal d'audit.
 
-## Comment reproduire le projet
-
-1. Restaurer la base `BorealERP` dans un SQL Server local
-2. Installer et configurer la passerelle de données locale
-3. Créer l'espace de travail Fabric, le lakehouse et le warehouse
-4. Exécuter les scripts SQL du dossier `sql/` dans l'ordre
-5. Lancer le pipeline `PL_Boreal_Quotidien` pour charger et transformer les données
-6. Ouvrir le rapport Power BI connecté au modèle sémantique `SM_Boreal`
-
 ## Défis et apprentissages
 
 - Connecter un SQL Server local à Fabric : configuration de la passerelle de données
