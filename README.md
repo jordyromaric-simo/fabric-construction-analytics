@@ -107,6 +107,13 @@ Le pipeline `PL_Boreal_Quotidien` lance les trois chargements bronze en parallè
 
 Microsoft Fabric (lakehouse, entrepôt, Copy job, Dataflow Gen2, pipeline, Activator) · T-SQL avancé (fonctions de fenêtrage, `MERGE`, CTAS, gestion d'erreurs) · modélisation dimensionnelle et SCD 2 · gestion des données de référence · Power BI (Direct Lake, DAX, RLS dynamique, App) · qualité des données · orchestration et journal d'audit.
 
+## Défis et apprentissages
+
+- Connecter un SQL Server local à Fabric : configuration de la passerelle de données
+- Choisir entre chargement complet et incrémental selon le type de table
+- Garantir la qualité des données entre les couches bronze, staging et gold
+- Mettre en place la sécurité au niveau des lignes dans un modèle Direct Lake
+
 ## Auteur
 
 **Jordy Romaric Simo**  analyste de données BI, Montréal · Certifié Microsoft PL-300 (Power BI Data Analyst) ·
