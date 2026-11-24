@@ -1,12 +1,5 @@
 /* =====================================================================
    Script 18 : correctif « mois complet »
-   ---------------------------------------------------------------------
-   Problème : le mois en cours est incomplet (coûts saisis chaque jour,
-   facturation en fin de mois). L'inclure dans une marge ou un cumul
-   écrase les résultats (marge brute ~1 % au lieu de ~10 %).
-   Correctif : une colonne est_mois_complet dans les 2 tables gold
-   mensuelles, recalculée à chaque chargement à partir de la date de
-   référence. Les mesures DAX ne retiennent que les mois complets.
    ===================================================================== */
 
 -- 1. Ajouter la colonne (nullable : seul type d'ajout permis sur une table existante)
