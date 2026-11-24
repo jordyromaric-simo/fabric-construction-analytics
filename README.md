@@ -116,6 +116,13 @@ Microsoft Fabric (lakehouse, entrepôt, Copy job, Dataflow Gen2, pipeline, Activ
 5. Lancer le pipeline `PL_Boreal_Quotidien` pour charger et transformer les données
 6. Ouvrir le rapport Power BI connecté au modèle sémantique `SM_Boreal`
 
+## Défis et apprentissages
+
+- Connecter un SQL Server local à Fabric : configuration de la passerelle de données
+- Choisir entre chargement complet et incrémental selon le type de table
+- Garantir la qualité des données entre les couches bronze, staging et gold
+- Mettre en place la sécurité au niveau des lignes dans un modèle Direct Lake
+
 ## Auteur
 
 **Jordy Romaric Simo**  analyste de données BI, Montréal · Certifié Microsoft PL-300 (Power BI Data Analyst) ·
