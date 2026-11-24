@@ -1,9 +1,6 @@
 /* =====================================================================
    PROJET FABRIC — Construction Boréal inc. (entreprise fictive)
    Script 01 : création de la base source « BorealERP » (SQL Server local)
-   ---------------------------------------------------------------------
-   Simule l'ERP d'un entrepreneur général québécois (paie, projets,
-   achats, facturation, équipements).
    ===================================================================== */
 USE master;
 GO
